@@ -1,0 +1,22 @@
+{
+    "name": "commerce9/module-tabedcarousel",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "",
+            "name": ""
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Commerce9\\TabedCarousel\\": ""
+        }
+    }
+}

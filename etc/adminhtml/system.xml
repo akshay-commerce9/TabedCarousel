@@ -1,34 +1,77 @@
 <?xml version="1.0"?>
-<!--
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
--->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <section id="google" translate="label" type="text" sortOrder="340" showInDefault="1" showInWebsite="1" showInStore="1">
-            <tab>sales</tab>
-            <resource>Commerce9_TabedCarousel::tabedcarousel</resource>
-            <group id="gtm" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Tabed Carousel</label>
-<!--                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">-->
-<!--                    <label>Enable</label>-->
-<!--                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>-->
-<!--                </field>-->
-                <field id="head_script" translate="label" type="textarea" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Head Script</label>
-                    <depends>
-                        <field id="*/*/active">1</field>
-                    </depends>
+        <tab id="commerce9" translate="label" sortOrder="0">
+            <label>Commerce9</label>
+        </tab>
+        <section id="featured" translate="label" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0">
+            <class>separator-top</class>
+            <label>Tab Carousel</label>
+            <tab>commerce9</tab>
+            <resource>Commerce9_TabedCarousel::tabedcarousel_config</resource>
+            <group id="homepage_group" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Home Page</label>
+                <group id="featured_group" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Featured</label>
+                <field id="featued_tab1_heading" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Tab1 Heading</label>
                 </field>
-                <field id="body_script" translate="label" type="textarea" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Body Script</label>
-                    <depends>
-                        <field id="*/*/active">1</field>
-                    </depends>
+                <field id="featured_tab1_sku" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Tab1 SKUs</label>
+                </field>
+                <field id="featued_tab2_heading" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Tab2 Heading</label>
+                </field>
+                <field id="featured_tab2_sku" translate="label" type="text" sortOrder="35" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Tab2 SKUs</label>
+                </field>
+                <field id="featued_tab3_heading" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Tab2 Heading</label>
+                </field>
+                <field id="featured_tab3_sku" translate="label" type="text" sortOrder="45" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Tab2 SKUs</label>
+                </field>
+
+                <field id="featued_tab4_heading" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Tab2 Heading</label>
+                </field>
+                <field id="featured_tab4_sku" translate="label" type="text" sortOrder="55" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Tab2 SKUs</label>
                 </field>
             </group>
+
+
+                <group id="promotions_group" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Promotions</label>
+
+                    <field id="promotions_tab1_heading" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Tab2 Heading</label>
+                    </field>
+
+                    <field id="promotions_tab1_sku" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Tab2 SKUs</label>
+                    </field>
+
+                </group>
+
+
+
+
+
+
+
+
+            </group>
+
+
+
+
+
+
+
+
+
+
         </section>
     </system>
 </config>
